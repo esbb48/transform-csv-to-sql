@@ -1,0 +1,25 @@
+{
+  "name": "transform-csv-to-sql",
+  "version": "1.0.0",
+  "description": "Only Base Layout",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esbb48/transform-csv-to-sql.git"
+  },
+  "keywords": [
+    "csv",
+    "mysql",
+    "node"
+  ],
+  "author": "ALi (esbb48)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esbb48/transform-csv-to-sql/issues"
+  },
+  "homepage": "https://github.com/esbb48/transform-csv-to-sql#readme"
+}
