@@ -1,6 +1,8 @@
 require("babel-core/register");
 const transformLib = require("./lib/index");
 
+var startId = 0;
+
 var params = {
   "columnArray": [
     "id",
@@ -13,12 +15,20 @@ var params = {
   },
   "inputFileName": "sample.csv",
   "tableName": "`User`",
-  "outputFileName": "sample"
+  "outputFileName": "sample",
+  initRowData: function (csvHeader, data) {
+    startId += 1
+    return {
+      id: startId,
+      userName: data[csvHeader.name],
+      gender: data[csvHeader.gender]
+    }
+  }
 }
 
 transformLib.generate(params)
-.then(function(result){
+.then(function (result) {
   console.error("# Success:", result)
-}).error(function(error){
+}).error(function (error) {
   console.error("# Error:", error)
 });
