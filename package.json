@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/esbb48/transform-csv-to-sql/issues"
   },
-  "homepage": "https://github.com/esbb48/transform-csv-to-sql#readme"
+  "homepage": "https://github.com/esbb48/transform-csv-to-sql#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "bluebird": "^3.3.4",
+    "fast-csv": "^1.0.0"
+  }
 }
