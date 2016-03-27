@@ -25,7 +25,7 @@
 }
 ```
 
-#### 3. (option) Add Some transform Logical in start.js
+#### 3. Add Some transform Logical in `lib/index.js` (option)
 
 #### 4. Exec cli
 ```
@@ -34,3 +34,8 @@ $ npm start
 ```
 
 #### 5. You can see the success message in terimal, and it will return output path.
+
+
+## Todo ::
+
+- Change Start.js Use ES6
