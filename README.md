@@ -35,9 +35,3 @@ $ npm start
 ```
 
 5. You can see the success message in terimal, and it will return output path.
-
-
-5. find result in output folo
-
-$ npm start
-```
