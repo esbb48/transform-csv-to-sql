@@ -6,6 +6,13 @@
 2. It's to mysql
 3. The first row isn't column defined. It means all rows which should be data.
 
+## Sample
+
+```
+$ npm install
+$ npm sample
+```
+
 ## Setup
 
 #### 1. Put `.csv` file in input folder
@@ -13,7 +20,7 @@
 
 ```
 {
-  columnArray: [] # SQL Column Order
+  columnArray: [] # Insert SQL Column
   csvHeader: {} # Column Defined
   inputFileName: "xxx.csv"
   tableName: "`table`" or "`database`.`table`"

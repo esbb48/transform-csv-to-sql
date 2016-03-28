@@ -5,23 +5,18 @@ var startId = 0;
 
 var params = {
   columnArray: [
-    "id",
-    "userName",
-    "gender"
+    // Insert SQL Column
   ],
   csvHeader: {
-    name: 0,
-    gender: 1
+    // Column Defined
   },
-  inputFileName: "sample.csv",
-  tableName: "`User`",
-  outputFileName: "sample",
+  inputFileName: "xxx.csv",
+  tableName: "``", // "`table`" or "`database`.`table`
+  outputFileName: "xxx",
   initRowData: (csvHeader, data) => {
     startId += 1
     return {
-      id: startId,
-      userName: data[csvHeader.name],
-      gender: data[csvHeader.gender]
+      id: startId
     }
   }
 }
