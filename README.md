@@ -34,8 +34,3 @@ $ npm start
 ```
 
 #### 5. You can see the success message in terimal, and it will return output path.
-
-
-## Todo ::
-
-- Change Start.js Use ES6

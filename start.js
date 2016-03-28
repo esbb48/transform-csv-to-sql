@@ -4,19 +4,19 @@ const transformLib = require("./lib/index");
 var startId = 0;
 
 var params = {
-  "columnArray": [
+  columnArray: [
     "id",
     "userName",
     "gender"
   ],
-  "csvHeader": {
-    "name": 0,
-    "gender": 1
+  csvHeader: {
+    name: 0,
+    gender: 1
   },
-  "inputFileName": "sample.csv",
-  "tableName": "`User`",
-  "outputFileName": "sample",
-  initRowData: function (csvHeader, data) {
+  inputFileName: "sample.csv",
+  tableName: "`User`",
+  outputFileName: "sample",
+  initRowData: (csvHeader, data) => {
     startId += 1
     return {
       id: startId,
@@ -27,8 +27,8 @@ var params = {
 }
 
 transformLib.generate(params)
-.then(function (result) {
+.then((result) => {
   console.error("# Success:", result)
-}).error(function (error) {
+}).error((error) => {
   console.error("# Error:", error)
 });
