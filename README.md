@@ -6,12 +6,15 @@
 2. It's to mysql
 3. The first row isn't column defined. It means all rows which should be data.
 
-## Sample
+## Sample Demo
 
+#### 1. Exec cli
 ```
 $ npm install
-$ npm sample
+$ npm run demo
 ```
+#### 2. See the file in `./output/sql_sample_xxxxx.sql`
+
 
 ## Setup
 
